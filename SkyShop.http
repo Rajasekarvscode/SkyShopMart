@@ -1,0 +1,6 @@
+@SkyShop_HostAddress = http://localhost:5280
+
+GET {{SkyShop_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

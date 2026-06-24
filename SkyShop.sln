@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyShop", "SkyShop.csproj", "{71B087EC-F5CC-403C-93B5-AF2899E55D48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "..\Core\Core.csproj", "{C92F6A39-2199-4EE8-97A1-D31CDFCB6ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{07FA80B0-7D43-4F0A-8515-9581C2EA2AD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71B087EC-F5CC-403C-93B5-AF2899E55D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B087EC-F5CC-403C-93B5-AF2899E55D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B087EC-F5CC-403C-93B5-AF2899E55D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B087EC-F5CC-403C-93B5-AF2899E55D48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92F6A39-2199-4EE8-97A1-D31CDFCB6ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92F6A39-2199-4EE8-97A1-D31CDFCB6ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92F6A39-2199-4EE8-97A1-D31CDFCB6ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92F6A39-2199-4EE8-97A1-D31CDFCB6ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07FA80B0-7D43-4F0A-8515-9581C2EA2AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07FA80B0-7D43-4F0A-8515-9581C2EA2AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07FA80B0-7D43-4F0A-8515-9581C2EA2AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07FA80B0-7D43-4F0A-8515-9581C2EA2AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BC1D5F5-B04C-4B2D-B20F-C25AAF619EF9}
+	EndGlobalSection
+EndGlobal

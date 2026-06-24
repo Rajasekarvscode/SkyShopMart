@@ -20,8 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SkyShop\Core\Core.csproj" />
-    <ProjectReference Include="..\SkyShop\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

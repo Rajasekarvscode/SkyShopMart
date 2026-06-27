@@ -1,6 +1,14 @@
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddControllers();
+builder.Services.AddDbContext<StoreContext>(opt =>
+{
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("SkyShopSystemDB"));
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -14,31 +22,20 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//dotnet tool install --global dotnet-ef --version 8.0.0
+//Install-Package Microsoft.EntityFrameworkCore.Tools
+
+
+//dotnet ef migrations add InitialCreate -s SkyShop -p Infrastructure
+
+//Add-Migration InitialCreate -Project Infrastructure -StartupProject SkyShop
+
+//dotnet ef migrations add InitialCreate --project Infrastructure --startup-project SkyShop
+
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.UseAuthorization();
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

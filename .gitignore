@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SkyShopMart/.vs/SkyShop
+/SkyShopMart/Core/obj
+/SkyShopMart/Infrastructure/obj/Debug/net8.0
+/SkyShopMart/Infrastructure/obj
+/SkyShopMart/SkyShop.API/obj/Debug/net8.0
+/SkyShopMart/SkyShop.API/obj
+/SkyShopMart/SkyShop.API/bin/Debug/net8.0
+/SkyShopMart/Core/bin/Debug/net8.0
+/SkyShopMart/Infrastructure/bin/Debug/net8.0
